@@ -37292,8 +37292,8 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/chiarapassaro/mamp_public/classe10-labooleana/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/chiarapassaro/mamp_public/classe10-labooleana/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/classe10-labooleana/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/classe10-labooleana/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -1,5 +1,10 @@
 # Creiamo un 'piccolo' giornale online
-Avremo due tipi di utenti: 
+
+## Wireframe
+https://www.figma.com/file/0gGEoY1QkbXmtIBgUnTZkN/LaBooleana?node-id=0%3A1
+
+
+## Avremo due tipi di utenti: 
 1. registrati 
 1. guests
 
@@ -23,3 +28,4 @@ vedere gli articoli pubblicati
 1. Un **articolo** può avere una sola **categoria**
 1. Un **articolo** può avere tanti **tags**
 1. Un **tag** può avere tanti **articoli**
+

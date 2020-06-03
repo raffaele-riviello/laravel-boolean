@@ -28,4 +28,3 @@ vedere gli articoli pubblicati
 1. Un **articolo** può avere una sola **categoria**
 1. Un **articolo** può avere tanti **tags**
 1. Un **tag** può avere tanti **articoli**
-

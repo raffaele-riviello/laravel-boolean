@@ -1,37 +1,3 @@
-@php
-// $pages = [
-//   [
-//     'id' => 1,
-//     'title' => 'lorem ipsum dolor sit',
-//     'category' => 1,
-//     'tags' => [
-//       1,
-//       3,
-//       5
-//     ],
-//   ],
-//   [
-//     'id' => 2,
-//     'title' => 'Titolo lorem ipsum dolor sit',
-//     'category' => 1,
-//     'tags' => [
-//       4,
-//       6,
-//       8
-//     ],
-//   ],
-//   [
-//     'id' => 3,
-//     'title' => 'Tre lorem ipsum dolor sit',
-//     'category' => 2,
-//     'tags' => [
-//       1,
-//       3,
-//       5
-//     ],
-//   ],
-// ];   
-@endphp
 @extends('layouts.app')
 @section('content')
     <div class="container">
@@ -62,14 +28,13 @@
                 <th>Title</th>
                 <th>Category</th>
                 <th>Tags</th>
-                <th colspan="3">Actions</th>
               </tr>
             </thead>
             <tbody>
               @foreach ($pages as $page)
                 <tr>
                   <td>{{$page['id']}}</td>
-                  <td>{{$page['title']}}</td>
+                  <td><a class="btn btn-primary" href="{{route('admin.pages.show', $page['id'])}}">{{$page['title']}}</a></td>
                   <td>{{$page->category->name}}</td>
                   <td>
                     @foreach ($page['tags'] as $tag)
@@ -79,19 +44,7 @@
                       @endif
                     @endforeach
                   </td>
-                <td><a class="btn btn-primary" href="{{route('admin.pages.show', $page['id'])}}">Visualizza</a> </td>
-                <td>
-                  @if(Auth::id() == $page['user_id'])
-                  <a class="btn btn-info" href="{{route('admin.pages.edit', $page->id)}}">Modifica</a>
-                  @endif
-                </td>
-                  <td>
-                  <form action="{{route('admin.pages.destroy', $page['id'])}}" method="POST">
-                      @csrf
-                      @method('DELETE')
-                      <input class="btn btn-danger" type="submit" value="Elimina">
-                    </form>
-                  </td>
+                
                 </tr>
               @endforeach
            
